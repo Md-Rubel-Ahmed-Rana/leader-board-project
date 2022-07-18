@@ -138,6 +138,13 @@ hr{
     grid-column-gap: 10px;
 }
 
+.course{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 .course .course-banner img{
     width: 224px;
     height: 104px;
@@ -146,7 +153,7 @@ hr{
 .course-info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-start;
 }
 
 .fa-star{
@@ -167,6 +174,7 @@ hr{
     color: red;
     width: 80px;
     text-align: center;
+    margin-left: 25px;
 }
 /* ===============
 Media Queries
@@ -207,6 +215,9 @@ Media Queries
     .player > img{
         border: 5px solid rgb(14, 180, 202);
         border-radius: 50%;
+    }
+    .course-duration {
+        margin-left: 100px;
     }
     
 }
