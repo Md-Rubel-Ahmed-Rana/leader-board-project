@@ -1,6 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+.darkMode{
+    background-color:#200240;
+    color: white;
+    border-radius: 10px;
+}
+
+#dark-mode-btn{
+    width: 60px;
+    font-size: 16px;
+    text-align: right;
+    padding: 10px;
+}
+.dark-btn{
+    text-align: left;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +25,11 @@ body{
 }
 header{
     background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 nav{
     display: flex;
@@ -56,11 +76,11 @@ nav > .profile a{
 }
 
 .container{
-    background-color: #ffffff;
     width: 870px;
     padding: 30px;
     margin-top: 21px;
     border-radius: 10px;
+    border: 5px solid #8080806b;
 }
 
 .top-players {
@@ -75,8 +95,8 @@ hr{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-row-gap: 30px;
+    gap: 30px;
+    text-align: center
 }
 
 .player{

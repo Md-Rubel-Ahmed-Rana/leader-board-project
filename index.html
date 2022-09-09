@@ -11,9 +11,9 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body id="body">
     <!-- header start -->
-    <header>
+    <header id="header">
         <nav>
             <div class="logo">
                 <img src="./images/icons/logo.png" alt="">
@@ -26,12 +26,13 @@
                 <img src="./images/icons/profile.png" alt="">
             </div>
         </nav>
+        <button onclick="applyDarkMode()" id="dark-mode-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
     </header>
     <!-- header end -->
     <main>
         <!-- top players and top blogs -->
-        <section class="container">
-            <div class="top-players">
+        <section id="players-container"  class="container">
+            <div id="players" class="top-players">
                 <h2 class="section-title">Top Player</h2>
                 <div class="players">
                     <div class="player">
@@ -106,7 +107,7 @@
         </section>
         <section class="container">
             <h2 class="section-title">Latest Courses</h2>
-            <div class="courses">
+            <div id="latest-courses" class="courses">
                 <div class="course">
                     <div class="course-banner">
                         <img src="./images/courses/course-1.png" alt="">
@@ -176,5 +177,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
